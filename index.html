@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Text with out id and class use</title>
+</head>
+<body>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <button type="button" onclick="textGet();">Click Me To get all text of box</button>
+</body>
+
+<script>
+textGet = () =>
+{
+    var ele = document.querySelectorAll("input[type='text']");
+    var inputVal=[]
+    ele.forEach((element)=>{
+        inputVal.push(element.value);
+    })
+    for (let i = 0; i < inputVal.length; i++) {
+        if(inputVal[i] != "")
+        {
+        document.write(inputVal[i]+"<br>")
+        }
+        
+  
+      }
+
+               
+}
+
+</script>
+</html>
