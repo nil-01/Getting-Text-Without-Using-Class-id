@@ -1,0 +1,1 @@
+# Getting-Text-Without-Using-Class-id
